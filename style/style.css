@@ -292,6 +292,7 @@ padding-right: 15px;
 }
 
 table {
+    overflow: scroll;
     box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.2);
    width: 96%;
     border-collapse: collapse;
@@ -432,20 +433,44 @@ footer a:hover {
           font-size: 24px;
           font-weight: 400;
      }
+     .last-game {
+        width: 370px;
+     }
      table {
+    width: 1000px;
+}
+
+    .header-container .row {
+        margin-right: 0;
+    }
+
+
+.last-game  {
+    overflow: scroll;
+}
+  header  .row, .down-nav{
+        margin-right: 0;
+    }
+     table {
+        
+         overflow: scroll;
          margin-left: 0;
      }
      footer {
+    position: relative;
+    bottom: 30px;
        display: block;
        margin-left:30px;
+       
      }
      footer .logo {
-        position: absolute;
-        right: 160px;
-        bottom: 15px;
+     
      }
      footer a {
+
      }
      footer a .emoney {
+        position: relative;
+        bottom: 0;
      }
  }
