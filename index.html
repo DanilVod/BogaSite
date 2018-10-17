@@ -8,14 +8,24 @@
     <link rel="stylesheet" href="style/media.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/fontello.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
   </head>
   <body>
       <div class="header">
-          <button class="menu">
-              <i class="icon-menu">
-          </i>
+        
+        <div class="menu">
+            <div class="stick stick-1"></div>
+            <div class="stick stick-2"></div>
+            <div class="stick stick-3"></div>
+        </div>
+        <div class="wrapper">
+            <nav class="mobile-menu">
+                 
+            </nav>
+        </div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
         </button>
         <header>
             <div class="header-container">
@@ -26,8 +36,8 @@
                             <source srcset="img/Logo.svg" type="img/">
                             <img src="img/Logo_1.png" alt="" class="logot">
                         </picture>
-                        <p>Помощь</p>
-                        <p>FAQ</p>
+                        <a href="#"><p>Помощь</p></a>
+                        <a href="#"><p>FAQ</p></a>
                     </div>
                 </div>
                 <div class="col-lg-4 border-bot"></div>
@@ -61,15 +71,16 @@
                             <div class="mini-icon">
                                 <picture>
                                     <source srcset="img/vk-social-network-logo.svg" type="image/">
-                                    <img src="img/vk-social-network-logo.png" alt="" class="vk">
+                                    <a href=""><img src="img/vk-social-network-logo.png" alt="" class="vk"></a>
                                 </picture>
                                 <picture>
                                     <source srcset="img/facebook-logo.svg" type="image/">
-                                    <img src="img/facebook-logo.png" alt="" class="fb">
+                                    <a href=""><img src="img/facebook-logo.png" alt="" class="fb"></a>
                                 </picture>
                                 <picture>
                                     <source srcset="img/twitter.svg" type="image/">
-                                    <img src="img/twitter.png" alt=""  class="tw">
+                                    <a href=""><img src="img/twitter.png" alt=""  class="tw"></a>
+                                    
                                 </picture>
                             </div>
                         </div>
@@ -127,7 +138,7 @@
                     <div class="exit-down">
                     <div class="col-lg-1">
                     <div class="exit">
-                        <img src="/img/1_objects_6.png" alt="" class="exit-icon">
+                        <a href="#"><img src="/img/1_objects_6.png" alt="" class="exit-icon"></a>
                     </div>
                     </div>
                     </div>
@@ -138,6 +149,7 @@
 
       </div>
     <div class="main-content">
+        
         <div class="container-fluid">
             <h1>Мои последние игры</h1>
             <div class="last-game">
@@ -205,12 +217,12 @@
             <footer>
         <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-1">
+            <div class="col-lg-1 col-sm-">
             <div class="logo">
             <img src="img/1_objects_7.png" alt="">
             </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 rules">
             <a href="">Политика конфиденциальности</a>
             <a href="">Пользовательское соглашение</a>
             </div>
@@ -237,6 +249,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script  src="js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
