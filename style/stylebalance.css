@@ -9,7 +9,10 @@ body {
     color: black;
     text-decoration: none;
 }
-
+button:hover {
+     cursor: pointer;
+    box-shadow: -1px 0px 16px 7px rgba(236, 239, 241, 1);
+}
 .header {
     position: relative;
     z-index: 2;
@@ -18,7 +21,6 @@ body {
     border-bottom-left-radius: 10px;
     box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.2);
 }
-
 .left-header img,
 p {
     display: inline-block;
@@ -293,7 +295,7 @@ padding-right: 15px;
     z-index: 1;
     background-color: #ECEFF1;
     width: 100%;
-    height: 580px;
+
   
    
 }
@@ -302,56 +304,16 @@ padding-right: 15px;
     margin-bottom: 15px;
 }   
 
-.main-content h1,table {
+.main-content h1{
     margin-left: 30px;
     margin-bottom: 20px;
   position: relative;
   top: 30px;
 }
 
-table {
-    overflow: scroll;
-    box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.2);
-   width: 96%;
-    border-collapse: collapse;
-    color: #686461;
-}
-
-
-.firstth {
-   border-top-left-radius: 5px;
-}
-
-.lastth {
-    border-top-right-radius:5px;
-}
-
-th {
-    border-bottom: 3px solid white;
-    padding: 10px;
-    text-align: left;
-      padding: 10px;
-      color: white;
-      background: #2cc6a4;
-      font-size: 14px;
-       font-weight: 400;
-}
-
-td {
-    padding: 10px;
-}
-
-tr:nth-child(odd) {
-    background: white;
-}
-
-tr:nth-child(even) {
-    background: white;
-}
 
 footer {
-    margin-bottom: 20px;
-    margin-top: 100px;
+    margin-top: 280px;
     grid-area: footer;
 }
 
@@ -365,6 +327,9 @@ footer a {
    top: 8px;
     padding-right: 30px;
     text-decoration: none;
+}
+tr img {
+    padding-left: 30px;
 }
 
 footer a:hover {
@@ -389,9 +354,100 @@ footer a:hover {
 .rotatik {
    transform: matrix(-0.71, -0.71, -0.71, 0.71, 0, 0);
 }
+.enter_summa::before{
+    content: "-";
+    width: 30px;
+    height: 30px;
+    font-size: 24pt;  
+    text-align: center;  
+    line-height: 20px;  
+    border-radius: 50%;  
+    float: left;  
+    position: absolute;  
+    right: 510px;
+    top:60px;
+     background: #2cc6a4;
+    color: white;
+    border: 1px solid #2cc6a4;
+}
+.enter_summa::after{
+    content: "+";
+    width: 30px;
+    height: 30px;  
+    font-size: 24pt;  
+    text-align: center;  
+    line-height: 20px;  
+    border-radius: 50%;  
+    float: right;  
+    position: absolute;  
+   right: 130px;
+   top: 60px;
+    background: #2cc6a4;
+    color: white;
+    border: 1px solid #2cc6a4;
+   
+}
+.enter_summa:hover::before {
+    cursor: pointer;
+   
+}
+.enter_summa:hover::after {
+    cursor: pointer;
+}
+.summa {
+    text-indent: 100px;
+    width: 313px;
+    height: 43px;
+    display:block;
+    background-color:#f6f7fb;
+    border: none;
+    margin-bottom: 20px;
+}
+.promo {
+    margin-bottom: 20px;
+}
+.promo input{
+    display: inline;
+    padding: 0;
+    margin: 0;
+    width: 180px;
+    height: 43px;
+}
 
+.promo button {
+     padding: 0;
+    margin: 0;
+    display: inline;
+    height: 43px;
+    width: 133px;
+}
+.promocode {
+    text-indent: 20px;
+    border: none;
+    background-color:#f6f7fb;
+}
+.activation {
+    border:none;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #2cc6a4;
+    
+}
+.cashbalance {
+     border:none;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #2cc6a4;
+    width: 313px;
+  height: 43px;
+    display: block;
+}
 
-
+.box-pay input {
+    color: #909090;
+    font-size: 14px;
+    font-weight: 400;
+}
 
 .menu {
     width: 80px;
@@ -573,6 +629,44 @@ footer a:hover {
 }
 
 
+.wrapper {
+    position: relative;
+    top: 30px;
+    border-radius: 6px;
+    background-color: #fff;
+     box-shadow: 0px 7px 16px 0px rgba(0,0,0,0.2);
+}
+
+.wrapper h3 {
+    padding: 10px 20px;
+    font-weight: 400;
+    color: #2f3542;
+    font-size: 20px;
+}
+.wrapper .box-pay h3 {
+    padding: 10px 0;
+    position:relative;
+    top:0;
+}
+.box-system-pay {
+    margin-bottom: 30px;
+}
+.box-system-pay img:hover,
+.box-system-pay img:focus {
+    cursor: pointer;
+  box-shadow: 0px 14px 46px 0px rgba(0,0,0,0.20);
+  transform: translateY(-0.25em);
+}
+.box-system-pay img{
+   
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.box-system {
+    display: inline-block;
+     padding: 10px 16px;
+}
+
  @media screen and (max-width: 480px) {
     .header {
         height: 80px;
@@ -621,39 +715,30 @@ footer a:hover {
          background-repeat: no-repeat;
          background-image: url(../img/path2.svg);
         background-color: #ECEFF1;
-         height: 850px;
+         height: 1100px;
      }
      .main-content h1 {
+         text-align: center;
           color: #2f3542;
           font-size: 24px;
           font-weight: 400;
      }
-     .last-game {
-        width: 370px;
-     }
-     table {
-    width: 1000px;
-}
+
+
 
     .header-container .row {
         margin-right: 0;
     }
 
 
-.last-game  {
-    overflow: scroll;
-}
+
   header  .row, .down-nav{
         margin-right: 0;
     }
-     table {
-        
-         overflow: scroll;
-         margin-left: 12px;
-     }
+    
      footer {
     position: relative;
-    bottom: 30px;
+    bottom: 340px;
        display: block;
        margin-left:50px;
        
@@ -676,4 +761,69 @@ footer a:hover {
         left: 10px;
         bottom: -300px;
      }
+     .box-system:nth-child(8){
+         position:relative;
+         right: -90px;
+     }
+     .box-system-pay h3{
+        text-align: center;
+     }
+     .box-pay{
+         text-align: center;
+         margin: 0 auto;
+     }
+     .summa {
+         width: 244px;  
+  height: 43px;
+  margin: 0 auto;
+     }
+     .enter_summa::before{
+    content: "-";
+    width: 30px;
+    height: 30px;
+    font-size: 24pt;  
+    text-align: center;  
+    line-height: 20px;  
+    border-radius: 50%;  
+    float: left;  
+    position: absolute;  
+    right: 340px;
+    top:57px;
+     background: #2cc6a4;
+    color: white;
+    border: 1px solid #2cc6a4;
+}
+.enter_summa::after{
+    content: "+";
+    width: 30px;
+    height: 30px;  
+    font-size: 24pt;  
+    text-align: center;  
+    line-height: 20px;  
+    border-radius: 50%;  
+    float: right;  
+    position: absolute;  
+   right: 47px;
+   top: 57px;
+    background: #2cc6a4;
+    color: white;
+    border: 1px solid #2cc6a4;
+    }
+    .promo .promocode {
+        width: 200px;
+    }
+    .promo .activation {
+        width: 121px;
+    }
+    .promo .form-inline {
+      
+        align-items: normal;
+        margin-top: 30px;
+        margin-left: 33px;
+    }
+    .box-pay .cashbalance {
+        display: inline;
+        width: 323px;
+        margin-bottom: 30px;
+    }
  }

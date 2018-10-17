@@ -6,8 +6,12 @@ body {
      font-family: MullerRegular;
 }
 .down-nav button a {
-    color: black;
+    color:black;
     text-decoration: none;
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: -1px 0px 16px 7px rgba(236, 239, 241, 1);
 }
 
 .header {
@@ -18,7 +22,6 @@ body {
     border-bottom-left-radius: 10px;
     box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.2);
 }
-
 .left-header img,
 p {
     display: inline-block;
@@ -350,8 +353,7 @@ tr:nth-child(even) {
 }
 
 footer {
-    margin-bottom: 20px;
-    margin-top: 100px;
+    margin-top: 280px;
     grid-area: footer;
 }
 
@@ -365,6 +367,9 @@ footer a {
    top: 8px;
     padding-right: 30px;
     text-decoration: none;
+}
+tr img {
+  
 }
 
 footer a:hover {
